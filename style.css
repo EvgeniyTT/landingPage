@@ -5,6 +5,8 @@ body {
 
 div#gift {
     background-image: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg");
+    display:flex;
+    align-items: center;
 }
 
 div {
@@ -50,18 +52,22 @@ img[name=gift] {
   margin: 30px 50px 0px 150px;
 }
 
-span {
+span.stock {
     font-family: "Times New Roman", Times, serif;
-    display: inline-block;
+    /*display: inline-block;*/
+    font-size: 20pt;
+    font-style: oblique;
+    color: red;
     width: 200px;
-    vertical-align: super;
+    text-align: center;
 }
 
 form {
   border: solid black 2px;
   float: right;
   margin: 40px 40px;
-  background-color: #FFEDBC;
+  background-color:rgba(255,229,169,0.5);
+  opacity: 99%;
 }
 
 div.about {
@@ -70,4 +76,14 @@ div.about {
   width: 200px;
   margin: 20px;
   background-color: green;
+}
+/*
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+.clearfix {
+  display: flex;
 }

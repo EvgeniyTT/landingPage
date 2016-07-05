@@ -1,0 +1,73 @@
+body {
+    /*background-image: url("imgs/evcalipt.jpg");*/
+    background-color: #cccccc;
+}
+
+div#gift {
+    background-image: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg");
+}
+
+div {
+  /*width: 100%;*/
+  margin: 20px 60px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+}
+.navbarlist li {
+    float: right;
+}
+.navbarlist li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbarlist li a.active {
+    color: #080;
+}
+
+.navbarlist li a:hover:not(.active) {
+    background-color: #111;
+}
+
+img.logo {
+  height: 60px;
+  /*display: inline-block;*/
+  /*float:left;*/
+}
+
+img[name=gift] {
+  height: 200px;
+  margin: 30px 50px 0px 150px;
+}
+
+span {
+    font-family: "Times New Roman", Times, serif;
+    display: inline-block;
+    width: 200px;
+    vertical-align: super;
+}
+
+form {
+  border: solid black 2px;
+  float: right;
+  margin: 40px 40px;
+  background-color: #FFEDBC;
+}
+
+div.about {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  background-color: green;
+}

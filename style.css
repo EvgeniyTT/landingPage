@@ -5,12 +5,38 @@ body {
 
 div#gift {
     background-image: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg");
-    display:flex;
     align-items: center;
 }
 
-div {
-  /*width: 100%;*/
+div#aboutUs {
+    background-color: #337;
+    align-items: center;
+    /*margin: auto;*/
+    /*display: table-cell;*/
+}
+
+div#gallery {
+    background-color: #396;
+    align-items: center;
+    /*margin: auto;*/
+    /*display: table-cell;*/
+}
+
+div#comments {
+    /*background-color: #396;*/
+    /*align-items: center;*/
+    /*vertical-align: middle;*/
+    /*display: inline-block;*/
+    /*margin: auto;*/
+    /*display: table-cell;*/
+}
+
+.centering {
+  margin: auto;
+  text-align: center;
+}
+
+.otstup {
   margin: 20px 60px;
 }
 
@@ -76,7 +102,18 @@ div.about {
   width: 200px;
   margin: 20px;
   background-color: green;
+
 }
+
+.flip-container {
+  height: 100px;
+  width: 100px;
+}
+
+/*div.about1 {
+  margin: 20px 20px 20px 150px;
+}*/
+
 /*
 .clearfix:after {
   content: "";
@@ -87,3 +124,184 @@ div.about {
 .clearfix {
   display: flex;
 }
+
+.mardinAuto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-----------FLIP STARTS---------*/
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100px;
+	/*height: 50px;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	/*top: 0;
+	left: 0;*/
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+/*-----------FLIP ENDS---------*/
+
+
+/*-------------GALERY STARTS----------*/
+table.gallery img.picture {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+table.gallery img.picture:hover {
+    opacity: 0.3;
+}
+
+table.gallery img.lupa {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  width:50%;
+}
+
+.caption {
+    display: block;
+}
+/*-------------GALERY ENDS----------*/
+
+
+/*-----------COMMENTS STARTS--------*/
+.carousel-items, .carousel-labels {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+.carousel-item {
+	display: block;
+	float: left;
+}
+
+.carousel-wrapper {
+	width: 100%;
+	position: relative;
+	padding-bottom: 30%;
+	background-color: #eee;
+	overflow: hidden;
+}
+.carousel-items {
+	width: 300%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	transition: left .5s ease-out;
+	-o-transition: left .5s ease-out;
+	-ms-transition: left .5s ease-out;
+	-moz-transition: left .5s ease-out;
+	-webkit-transition: left .5s ease-out;
+}
+.carousel-item {
+	width: 33.33333333%;
+	height: 100%;
+	color: white;
+}
+.carousel-item-blue {
+	background-color: blue;
+}
+.carousel-item-red {
+	background-color: red;
+}
+.carousel-item-green {
+	background-color: green;
+}
+.carousel-labels {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	bottom: 0;
+	height: 20px;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+}
+.carousel-selector {
+	display: none;
+}
+.carousel-label {
+	display: inline-block;
+}
+.carousel-label label {
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	background-color: white;
+	display: block;
+	cursor: pointer;
+}
+
+#slide1:checked ~ .carousel-items {
+	left: 0;
+}
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label {
+	background-color: black;
+}
+#slide2:checked ~ .carousel-items {
+	left: -100%;
+}
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label {
+	background-color: black;
+}
+#slide3:checked ~ .carousel-items {
+	left: -200%;
+}
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label {
+	background-color: black;
+}
+
+.comment {
+  width: 150px;
+  /*height: 100%;*/
+  float: left;
+  margin: auto;
+}
+
+
+/*-----------COMMENTS ENDS--------*/

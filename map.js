@@ -5,10 +5,7 @@ function initMap() {
       zoom: 10
   });
 
-
   var iconUrl = 'http://maps.google.com/mapfiles/kml/paddle/red-stars.png';
-
-
   function addMarker(feature) {
             var marker = new google.maps.Marker({
               position: feature.position,
@@ -16,8 +13,6 @@ function initMap() {
               map: map
             });
           }
-addMarker( {position: new google.maps.LatLng(50.008233, 36.239398)} );
 
-
-
+  addMarker( {position: new google.maps.LatLng(50.008233, 36.239398)} );
 }

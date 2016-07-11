@@ -5,6 +5,7 @@ var fs = require("fs");
 var static = require('node-static');
 var util = require('util');
 var path = require('path');
+var $ = require("jquery");
 
 var fileServer = new static.Server(__dirname);
 

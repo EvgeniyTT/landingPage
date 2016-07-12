@@ -213,33 +213,44 @@ div.about {
 
 
 /*-------------GALERY STARTS----------*/
-table {
-    margin: 0 auto; /* or margin: 0 auto 0 auto */
-  }
+.galleryItem {
+  display: inline-block;
+  width: 20%;
+  height: 150px;
+}
+
+.galleryItemImg {
+  position: relative;
+  /*left: 0;
+  top: 0;*/
+  background-color: white;
+
+}
 
 img.picture {
-  width: 160px;
-  height: 160px;
-  margin: 20px;
+  max-width: 160px;
+  max-height: 160px;
+  /*margin: 20px;*/
   position: relative;
   top: 0;
   left: 0;
 }
 
-img.picture:hover {
+/*img.picture:hover {
     opacity: 0.3;
-}
+}*/
 
 img.lupa {
   position: absolute;
-  top: 60px;
-  left: 60px;
-  width:50%;
+  /*top: 60px;
+  left: 60px;*/
+  max-width: 160px;
+  max-height: 160px;
 }
 
-.caption {
+/*.caption {
     display: block;
-}
+}*/
 
 /*dt, dd, dl {
     margin:0;
@@ -412,9 +423,12 @@ dt, dd {
 /*-----------CONTACTS STARTS-----------*/
 
 #map {
-  width: 40%;
+  display: block;
+  position: relative;
+  width: 100%;
+  /*height: 100%;*/
   height: 300px;
-  margin: 30px 30px 30px 80px;
+  /*margin: 30px 30px 30px 80px;*/
   float: left;
 }
 
@@ -427,14 +441,15 @@ dt, dd {
   padding: 30px;
 }
 
-form.map {
-  border: solid black 2px;
+form.address {
+  position: absolute;
+  border: solid black 5px;
   float: right;
-  width: 300px;
-  margin: 40px 40px;
-  background-color:rgba(255,229,169,0.5);
-  padding: 30px;
-  /*opacity: 99%;*/
+  width: 200px;
+  margin: 60px 65% ;
+  background-color:rgba(255,229,169,0.8);
+  padding: 20px;
+  /*opacity: 60%;*/
 }
 
 /*-----------CONTACTS ENDS-----------*/

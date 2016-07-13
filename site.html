@@ -10,9 +10,10 @@
     <title>Ledenec</title>
   </head>
   <body>
-    <nav class='navbar'>
+    <nav>
       <img class='logo' src="imgs/tunies-logo.png">
       <div class="logoText">Лучшие </br> Эвкалиптовые </br> Конфеты</div>
+      <div class='menu'>
         <ul class='navbarlist'>
           <li><a href="#contacts">Contacts</a></li>
           <li><a href="#comments">Comments</a></li>
@@ -20,12 +21,16 @@
           <li><a href="#aboutUs">About Us</a></li>
           <li><a href="#gift">Home</a></li>
         </ul>
+      </div>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">x</button>
+      <!-- &#735; -->
     </nav>
     <div id='gift' class="clearfix otstup">
-      <div class="centering">
+      <div class="centering content">
         <img name='gift' src='imgs/gift.png'>
         <span class='stock'>Акция неслыханной щедрости! При оптовом заказе детским садикам и фирмам, содержащим коал - 1000 леденцов в подарок*</span>
-        <form class="gift">
+        <form class="gift centering">
           Спешите заказать тонны удовольствия!<br><br><br><br>
           <label class="submitForm">Имя: </label><input type="text" name="firstname" class="submitForm" placeholder="ФИО"><br>
           <label class="submitForm">Телефон: </label>
@@ -37,9 +42,8 @@
       </div>
     </div>
 
-
     <div id='aboutUs' class="clearfix otstup">
-      <div class="centering">
+      <div class="centering content">
         <h2>Почему выбирают нас</h2>
         <div class='about about1'>
           <div class="flip-container centering" >
@@ -86,161 +90,84 @@
       </div>
     </div>
 
-
     <div id='gallery' class="clearfix otstup">
       <div class="centering content">
         <h2>Галерея</h2>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img class="picture centeringImgInsideDiv" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/evkalipt-10.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/evkalipt-10.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/5063-eucalyptus-oil-for-skin-hair-health.jpg"/>
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img class="picture centeringImgInsideDiv" src="imgs/5063-eucalyptus-oil-for-skin-hair-health.jpg"/>
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/Azeite-de-oliva-remedios.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/Azeite-de-oliva-remedios.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/how-to-cure-asthma-eucalyptus-oil.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/how-to-cure-asthma-eucalyptus-oil.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/eucalyptus-oil-for-hair.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/eucalyptus-oil-for-hair.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/tea-sinus.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/tea-sinus.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/aceite-eucalipto.jpeg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/aceite-eucalipto.jpeg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/59d2ced7934e49dc5e991dd1e11bd6e1.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/59d2ced7934e49dc5e991dd1e11bd6e1.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
             <div class="galleryItem">
               <div class="galleryItemImg">
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img src="imgs/851d874a192d8a2896516efc7c114c79.jpg" class="picture">
+                <img class="lupa centeringImgInsideDiv" src="imgs/mandat-recherche-achat.png"/>
+                <img src="imgs/851d874a192d8a2896516efc7c114c79.jpg" class="picture centeringImgInsideDiv">
               </div>
               <span class="caption">Картинка</span>
             </div>
-
-        <!-- <div class="table_data">
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-            <dl>
-              <dt>
-                <img class="lupa" src="imgs/mandat-recherche-achat.png"/>
-                <img class="picture" src="imgs/851d874a192d8a2896516efc7c114c79.jpg"/>
-              </dt>
-              <dd><span class="caption">Картинка</span></dd>
-            </dl>
-        </div> -->
-
-
       </div>
     </div>
 
-
     <div id='comments' class="clearfix otstup">
-      <div class="centering">
+      <div class="centering content">
         <h2>Что о нас говорят</h2>
         <div class="carousel-wrapper commentOut">
 
@@ -251,19 +178,19 @@
           	<ul class="carousel-items">
           		<li class="carousel-item">
                 <div class="commentIn">
-                  <img class="comment circular" src="imgs/di-kaprio-javljaetsja-na-opredelennuju-dolju-russkim_rect_73964f9ad23fe44bdccc31d53472a745.jpg">
+                  <img class="comment circular centeringImgInsideDiv" src="imgs/di-kaprio-javljaetsja-na-opredelennuju-dolju-russkim_rect_73964f9ad23fe44bdccc31d53472a745.jpg">
                   <p class="textComment">"Я бы никогда не выиграл оскар, если бы не ел эвкалиптовые леденцы!"</p>
                 </div>
           		</li>
           		<li class="carousel-item">
                 <div class="commentIn">
-                  <img class="comment circular" src="imgs/koala_35973701_orig_.jpg">
+                  <img class="comment circular centeringImgInsideDiv" src="imgs/koala_35973701_orig_.jpg">
             			<p class="textComment">"Раньше мне было стыдно, что я был вынужден есть листья у всех на виду, но теперь, я могу наслаждаться своим любимым эвкалиптом в культурном обществе."</p>
                 </div>
           		</li>
           		<li class="carousel-item">
                 <div class="commentIn">
-                  <img class="comment circular" src="imgs/Кличко_Виталий_2.jpg">
+                  <img class="comment circular centeringImgInsideDiv" src="imgs/Кличко_Виталий_2.jpg">
                   <p class="textComment">"У меня есть два заместителя, четыре из которых уже месяц лежат в кабинете министров, и которых назначить невозможно. Не знаю, почему."</p>
                 </div>
           		</li>
@@ -286,19 +213,18 @@
     </div>
 
     <div id='contacts' class="clearfix otstup">
-      <div class="centering">
-      <h2>Контакты</h2>
-      <div id="map">
+      <div class="centering content">
+        <h2>Контакты</h2>
+        <div id="map"></div>
+        <form class="address" >
+          Наш адрес:</br>
+          Улица Каразина</br>
+          Дом 2</br>
+          Тел. 063 248 06 64</br>
+          Индекс 610007</br>
+        </form>
       </div>
-      <form class="address" >
-        Наш адрес:</br>
-        Улица Каразина</br>
-        Дом 2</br>
-        Тел. 063 248 06 64</br>
-        Индекс 610007</br>
-      </form>
     </div>
-  </div>
 
   <footer id="footer" class="centering">
     </br>

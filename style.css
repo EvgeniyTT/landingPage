@@ -4,90 +4,11 @@ body {
     padding-top: 100px;
 }
 
+/*--------------------NAVBAR STARTS------------------*/
+
 .logoText {
   color: #193;
   display: inline-block;
-}
-
-.content {
-  width: 1200px;
-}
-
-div#gift {
-    /*background-image: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg") no-repeat center center fixed;*/
-    background: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg") no-repeat;
-    background-size: cover;
-    align-items: center;
-    /*vertical-align: middle;*/
-}
-
-div#aboutUs {
-    background-color: #337;
-    align-items: center;
-}
-
-div#gallery {
-    background-color: #396;
-    /*align-items: center;*/
-}
-
-div#comments {
-    background-color: #DACAA4;
-    /*vertical-align: middle;
-    align-items: center;
-    vertical-align: middle;*/
-}
-
-div#contacts {
-    background-color: #A0DEDB;
-}
-
-.centering {
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.otstup {
-  margin: 20px 60px;
-}
-
-nav {
-  position: fixed;
-  margin: 0px 60px;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    float: right;
-}
-.navbarlist li {
-    float: right;
-}
-.navbarlist li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbarlist li a.active {
-    color: #080;
-}
-
-.navbarlist li a:hover:not(.active) {
-    background-color: #111;
 }
 
 img.logo {
@@ -95,6 +16,188 @@ img.logo {
   /*display: inline-block;*/
   /*float:left;*/
 }
+
+@media (max-width : 650px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    }
+
+  .hamburger{
+    background-color: #333;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:59px;
+    padding:0px 15px 5px 15px;
+    color:#fff;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  .cross{
+    display: none;
+    background-color: #333;
+    position:absolute;
+    top:0px;
+    right:0;
+    padding:0px 15px 5px 15px;
+    color:#fff;
+    border:0;
+    font-size:3em;
+    line-height:59px;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+  .menu{
+    display: none;
+    z-index:1000000;
+    font-weight:bold;
+    font-size:0.8em;
+    width:100%;
+    background-color: #333;
+    position:absolute;
+    text-align:center;
+  }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+  }
+  .menu li {
+    display: block;
+    padding:15px 0 15px 0;
+    border-bottom:#1d1f20 1px solid;}
+  .menu li:hover{
+    display: block;
+    background:#181818;
+    padding:15px 0 15px 0;
+    border-bottom:#1d1f20 1px solid;
+  }
+  .menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+  .menu ul li a:hover {  color: #fff; text-decoration:none;}
+  .menu a{text-decoration:none; color:white;}
+  .menu a:hover{text-decoration:none; color:white;}
+
+  .glyphicon-home{
+    color:white;
+    font-size:1.5em;
+    margin-top:5px;
+    margin:0 auto;
+  }
+}
+
+
+/*----------------------OLD---*/
+
+@media (min-width : 651px) {
+  .hamburger{
+    display: none;
+  }
+  .cross{
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    float: right;
+  }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  }
+  .menu ul {
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  .navbarlist li {
+      float: right;
+  }
+  .navbarlist li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  .navbarlist li a.active {
+      color: #080;
+  }
+
+  .navbarlist li a:hover:not(.active) {
+      background-color: #111;
+  }
+}
+
+@media (min-width : 900px) {
+  .menu ul {
+    margin-right: 60px;
+  }
+  img.logo {
+    margin-left: 60px
+  }
+}
+/*--------------------NAVBAR ENDS------------------*/
+
+.content {
+  width: 1200px;
+  display: block;
+  position: relative;
+}
+
+div#gift .content{
+    /*background-image: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg") no-repeat center center fixed;*/
+    background: url("imgs/party-celebration-balloons-yellow-burst-13895723.jpg") no-repeat;
+    background-size: cover;
+    align-items: center;
+    /*vertical-align: middle;*/
+}
+
+div#aboutUs .content{
+    background-color: #337;
+    align-items: center;
+}
+
+div#gallery .content{
+    background-color: #396;
+    /*align-items: center;*/
+}
+
+div#comments .content{
+    background-color: #DACAA4;
+    /*vertical-align: middle;
+    align-items: center;
+    vertical-align: middle;*/
+}
+
+div#contacts .content{
+    background-color: #A0DEDB;
+}
+
+.centering {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  /*width: 100%;*/
+}
+
+/*.otstup {
+  margin: 20px 60px;
+}*/
 
 img[name=gift] {
   height: 200px;
@@ -112,14 +215,26 @@ span.stock {
     text-align: center;
 }
 
-form.gift {
-  display: inline-block;
-  border: solid black 2px;
-  /*float: right;*/
-  margin: 40px 40px;
-  padding: 15px;
-  background-color:rgba(255,229,169,0.5);
-  /*opacity: 99%;*/
+@media (max-width : 450px) {
+  form.gift {
+    display: inline-block;
+    box-sizing: border-box;
+    border: solid black 3px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color:rgba(255,229,169,0.5);
+  }
+}
+
+@media (min-width : 550px) {
+  form.gift {
+    display: inline-block;
+    border: solid black 2px;
+    margin: 40px 40px;
+    padding: 15px;
+    background-color:rgba(255,229,169,0.5);
+  }
 }
 
 label.submitForm {
@@ -134,30 +249,29 @@ input.submitForm {
   float: left;
 }
 
-div.about {
-  display: inline-block;
-  height: 230px;
-  width: 300px;
-  margin: 20px;
-  background-color: green;
+@media (min-width : 371px) {
+  div.about {
+    display: inline-block;
+    height: 230px;
+    width: 300px;
+    margin: 20px;
+    background-color: green;
+  }
+}
 
+@media (max-width : 370px) {
+  div.about {
+    display: inline-block;
+    width: 100%;
+    background-color: green;
+    margin-bottom: 3px;
+  }
 }
 
 .flip-container {
   height: 100px;
   width: 100px;
 }
-
-/*div.about1 {
-  margin: 20px 20px 20px 150px;
-}*/
-
-/*
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
 
 .clearfix {
   display: flex;
@@ -181,34 +295,25 @@ div.about {
 
 .flip-container, .front, .back {
 	width: 100px;
-	/*height: 50px;*/
 }
 
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
-	/*top: 0;
-	left: 0;*/
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
@@ -217,10 +322,22 @@ div.about {
 
 
 /*-------------GALERY STARTS----------*/
-.galleryItem {
-  display: inline-block;
-  width: 20%;
-  height: 150px;
+
+
+@media (max-width : 550px) {
+  .galleryItem {
+    display: inline-block;
+    width: 40%;
+    height: 100px;
+  }
+}
+
+@media (min-width : 551px) {
+  .galleryItem {
+    display: inline-block;
+    width: 20%;
+    height: 150px;
+  }
 }
 
 .galleryItemImg {
@@ -234,13 +351,17 @@ div.about {
   margin: 5px;
 }
 
+.centeringImgInsideDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 img.picture {
   max-width: 100%;
   max-height: 100%;
-  position: absolute;
-  top:0;
-  bottom:0;
-  margin:auto;
 }
 
 img.picture:hover {
@@ -248,12 +369,8 @@ img.picture:hover {
 }
 
 img.lupa {
-  position: absolute;
   max-width: 30%;
   max-height: 30%;
-  top:0;
-  bottom:0;
-  margin:auto;
 }
 
 /*.caption {
@@ -296,6 +413,7 @@ dt, dd {
 }
 
 .carousel-wrapper {
+  height: 100%;
 	width: 100%;
 	position: relative;
 	padding-bottom: 30%;
@@ -380,9 +498,7 @@ dt, dd {
 
 .commentIn {
   position:relative;;
-  height: 200px;
-  top:50%;
-  margin-top:-100px;
+  height: 100%;
 }
 
 .textComment {
@@ -401,22 +517,14 @@ dt, dd {
   /*margin-left:50px;*/
   /*float: left;*/
   display: inline-block;
-  width: 400px;
+
   background:#f3961c;
   font: italic 14px Georgia;
 }
 
-
-.comment {
-  /*width: 150px;*/
-  /*height: 200px;
-  float: left;
-  margin: auto;*/
-}
-
 .circular {
-	width: 150px;
-	height: 150px;
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
 	/*-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;*/
@@ -425,6 +533,51 @@ dt, dd {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
+
+  @media (max-width: 601px) {
+    div#comments .content{
+      height: 250px;
+    }
+    .textComment {
+      width: 90%;
+      padding:5px;
+    }
+    .circular {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .textComment {
+      width: 100%;
+      padding:5px;
+    }
+    .circular {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .textComment {
+      width: 600px;
+    }
+    .circular {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .textComment {
+      width: 800px;
+    }
+    .circular {
+      width: 200px;
+      height: 200px;
+    }
+  }
 
 /*-----------COMMENTS ENDS--------*/
 
@@ -449,15 +602,26 @@ dt, dd {
   padding: 30px;
 }
 
-form.address {
-  position: absolute;
-  border: solid black 5px;
-  float: right;
-  width: 200px;
-  margin: 60px 65% ;
-  background-color:rgba(255,229,169,0.8);
-  padding: 20px;
-  /*opacity: 60%;*/
+@media (max-width : 650px) {
+  form.address {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid black 3px;
+  }
+}
+
+@media (min-width : 651px) {
+  form.address {
+    position: absolute;
+    border: solid black 5px;
+    float: right;
+    width: 150px;
+    top:40%;
+    left:70%;
+    background-color:rgba(255,229,169,0.8);
+    padding: 20px;
+  }
 }
 
 /*-----------CONTACTS ENDS-----------*/

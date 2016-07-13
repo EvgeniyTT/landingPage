@@ -18,10 +18,25 @@ $(document).ready(function(){
     $(document).scroll(function() {
        scroll_start = $(this).scrollTop();
        if(scroll_start > offset.top) {
-           $('.navbar').css('background-color', '#333');
+           $('nav').css('background-color', '#333');
         } else {
-           $('.navbar').css('background-color', 'transparent');
+           $('nav').css('background-color', 'transparent');
         }
+    });
+
+    // make hamburger navbar for mobile devices
+    $( ".hamburger" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+        $( ".hamburger" ).hide();
+        $( ".cross" ).show();
+      });
+    });
+
+    $( ".cross" ).click(function() {
+      $( ".menu" ).slideToggle( "slow", function() {
+        $( ".cross" ).hide();
+        $( ".hamburger" ).show();
+      });
     });
 
 });

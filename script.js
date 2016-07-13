@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // slow move to selected section
-    $(".navbar").on("click","a", function (event) {
+    $(".menu").on("click","a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
         //забираем идентификатор бока с атрибута href
